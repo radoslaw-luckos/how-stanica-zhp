@@ -1,0 +1,45 @@
+.navbar{
+    background-color: $dark-bg;
+    color: $white-text;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 4rem;
+    .logo{
+        height: 5rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .menu{
+        display: flex;
+        flex-flow: row;
+        gap: 4rem;
+        font-size: 1.2rem;
+        &__link {
+            height: 100%;
+            padding-inline: 1rem;
+            a{
+                text-decoration: none;
+                color: $white-text;
+            }
+        }
+        &__link--active{
+            font-style: italic;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background-color: $white-text;
+                border-top-left-radius: .5rem;
+                border-top-right-radius: .5rem;
+            }
+        }
+    }
+}
