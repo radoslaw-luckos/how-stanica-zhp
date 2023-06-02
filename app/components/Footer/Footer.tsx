@@ -12,7 +12,7 @@ const Footer = (props: Props) => {
 			<div className='address'>
 				<h2 className='address__name'>Harcerski Ośrodek Wodny "Stanica"</h2>
 				<p>ul. Kożuchowska 13, 51-631 Wrocław</p>
-				<p>stanica@zhp.pl / www.stanica.zhp.pl</p>
+				<p>stanica@zhp.pl / www.stanica.zhp.net.pl</p>
 			</div>
 			<div className='logos'>
 				<Link
