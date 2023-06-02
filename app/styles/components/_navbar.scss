@@ -1,6 +1,6 @@
 .navbar{
     background-color: $dark-bg;
-    color: $white-text;
+    color: $light-text;
     height: 7rem;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
             padding-inline: 1rem;
             a{
                 text-decoration: none;
-                color: $white-text;
+                color: $light-text;
             }
         }
         &__link--active{
@@ -36,7 +36,7 @@
                 left: 0;
                 width: 100%;
                 height: 5px;
-                background-color: $white-text;
+                background-color: $light-text;
                 border-top-left-radius: .5rem;
                 border-top-right-radius: .5rem;
             }
