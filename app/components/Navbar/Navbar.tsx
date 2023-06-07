@@ -1,16 +1,10 @@
 'use client';
 import Image from 'next/image';
 import stanicaLogo from '../../assets/icons/stanica-white.svg';
-import localFont from 'next/font/local';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { MuseoSans } from '@/app/utils/Fonts';
 
-const MuseoSans = localFont({
-	src: [
-		{ path: '../../assets/fonts/museo-sans.otf', style: 'normal' },
-		{ path: '../../assets/fonts/museo-sans-italic.otf', style: 'italic' },
-	],
-});
 
 const Navbar = () => {
 	const activePath: string = usePathname();
