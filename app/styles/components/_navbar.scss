@@ -1,23 +1,87 @@
-.navbar{
+// .navbar{
+//     background-color: $dark-bg;
+//     color: $light-text;
+//     height: 7rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding-inline: $padding-big;
+//     .logo{
+//         height: 5rem;
+//         img {
+//             width: 100%;
+//             height: 100%;
+//         }
+//     }
+//     .menu{
+//         display: flex;
+//         flex-flow: row;
+//         gap: 4rem;
+//         font-size: 1.2rem;
+//         &__link {
+//             height: 100%;
+//             padding-inline: 1rem;
+//             a{
+//                 text-decoration: none;
+//                 color: $light-text;
+//             }
+//         }
+//         &__link--active{
+//             font-style: italic;
+//             position: relative;
+//             &::after{
+//                 content: '';
+//                 position: absolute;
+//                 bottom: -3rem;
+//                 left: 0;
+//                 width: 100%;
+//                 height: 5px;
+//                 background-color: $light-text;
+//                 border-top-left-radius: .5rem;
+//                 border-top-right-radius: .5rem;
+//             }
+//         }
+//     }
+// }
+.navbar {
     background-color: $dark-bg;
     color: $light-text;
-    height: 7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: $padding-big;
-    .logo{
-        height: 5rem;
-        img {
-            width: 100%;
+    height: 7rem;
+    width: 100%;
+    padding: 0 $padding-small;
+    position: relative;
+    .hamburgerBtn{
+        border: none;
+        background: transparent;
+        color: $light-text;
+        height: 2rem;
+        width: auto;
+        svg{
             height: 100%;
+            width: auto;
         }
     }
-    .menu{
-        display: flex;
-        flex-flow: row;
-        gap: 4rem;
-        font-size: 1.2rem;
+    .menu {
+        display: none;
+        &--active{
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            min-height: calc(100vh - 7rem);
+            background-color: $dark-bg;
+            z-index: 100;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-around;
+            padding: $padding-big 0;
+            
+        }
         &__link {
             height: 100%;
             padding-inline: 1rem;
@@ -25,20 +89,9 @@
                 text-decoration: none;
                 color: $light-text;
             }
-        }
-        &__link--active{
-            font-style: italic;
-            position: relative;
-            &::after{
-                content: '';
-                position: absolute;
-                bottom: -3rem;
-                left: 0;
-                width: 100%;
-                height: 5px;
-                background-color: $light-text;
-                border-top-left-radius: .5rem;
-                border-top-right-radius: .5rem;
+            &--active{
+                font-style: italic;
+                text-decoration: underline;
             }
         }
     }
