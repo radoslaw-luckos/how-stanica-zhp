@@ -27,7 +27,47 @@
     &--red{
         background-color: $color-yb;
     }
-    &:hover{
-        transform: scale(1.05);
+}
+
+
+@media (min-width: $media-small) {
+    .socialBtn {
+        svg {
+            font-size: 1.5rem;
+        }
+        &--blue{
+            p {
+                display: block;
+            }
+        }
+    }
+}
+@media (min-width: $media-medium) {
+    .socialBtn {
+        svg {
+            font-size: 1.5rem;
+        }
+        &--blue{
+            p {
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width: $media-large) {
+    .socialBtn {
+        svg {
+            font-size: 1.8rem;
+        }
+    }
+}
+@media (min-width: $media-xlarge) {
+    .socialBtn {
+        &--blue{
+            p {
+                display: block;
+                font-size: .8rem;
+            }
+        }
     }
 }

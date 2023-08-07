@@ -42,10 +42,15 @@ export default function Home() {
 				</div>
 				<div className='hero__imageContainer'>
 					<Image
-						src='https://images.pexels.com/photos/298846/pexels-photo-298846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+						src='https://images.pexels.com/photos/42111/pexels-photo-42111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 						alt='Hero image'
-						width={600}
-						height={300}
+						quality={100}
+						fill
+						sizes='100vw'
+						style={{
+							objectFit: 'cover',
+							objectPosition: 'bottom',
+						}}
 					/>
 				</div>
 			</section>
