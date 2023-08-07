@@ -57,3 +57,27 @@
         }
     }
 }
+
+
+@media (min-width: $media-medium) {
+    .footerBox{
+        flex-flow: row nowrap;
+        .logos {
+            &__link{
+                height: 3rem;
+            }
+        }
+        .address{
+            line-height: 1.2rem;
+            font-size: 1rem;
+            &__name{
+                font-weight: 700;
+            }
+        }
+    }
+}
+@media (min-width: $media-large) {
+    .footerBox{
+        padding: $padding-medium;
+    }
+}

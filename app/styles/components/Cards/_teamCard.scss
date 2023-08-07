@@ -38,7 +38,7 @@
 }
 @media (min-width: $media-large) {
     .teamCard {
-        min-width: 10rem;
+        width: 12rem;
         gap: $padding-small;
         &__imageContainer{
             border-radius: 50%;

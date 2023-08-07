@@ -67,7 +67,6 @@
     .menu {
         display: none;
         &--active{
-            display: block;
             position: absolute;
             top: 100%;
             left: 0;
@@ -95,4 +94,57 @@
             }
         }
     }
+}
+
+@media (min-width: $media-medium) {
+    .menu {
+        &__link{
+            font-size: 1.6rem;
+        }
+    }
+}
+@media (min-width: $media-large) {
+    .navbar{
+        .hamburgerBtn{
+            display: none;
+        }
+        .menu{
+            position: static;
+            display: flex;
+            flex-flow: row;
+            gap: 4rem;
+            font-size: 1.2rem;
+            &__link {
+                font-size: 1.2rem;
+                text-decoration: none;
+                height: 100%;
+                padding-inline: 1rem;
+                a{
+                    text-decoration: none;
+                    color: $light-text;
+                }
+            }
+            &__link--active{
+                font-style: italic;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -3rem;
+                    left: 0;
+                    width: 100%;
+                    height: 5px;
+                    background-color: $light-text;
+                    border-top-left-radius: .5rem;
+                    border-top-right-radius: .5rem;
+                }
+            }
+            &--active{
+                position: static;
+            }
+        }
+    }
+    
+}
+@media (min-width: $media-xlarge) {
 }

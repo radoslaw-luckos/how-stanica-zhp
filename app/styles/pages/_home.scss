@@ -1,41 +1,4 @@
-// .homePage{
-//     
-//     .hero{
-//         
-//         flex-flow: row;
-//         justify-content: space-between;
-//         &__messageContainer{
-//             width: 30%;
-//             display: flex;
-//             flex-flow: column nowrap;
-//             justify-content: center;
-//             align-items: flex-start;
-//         }
-//         &__imageContainer {
-//             width: 50%;
-//             background: #D9D9D9;
-//             border-radius: 300px 300px 300px 100px;
-//             overflow: hidden;
-//         }
-//         &__title{
-//             font-size: 2rem;
-//             font-style: italic;
-//             padding-bottom: 1rem;
-//         }
-//         &__msg{
-//             font-size: 1.5rem;
-//             line-height: 1.7rem;
-//             text-align: left;
-//             padding-bottom: 1rem;
-//         }
-//         &__socials {
-//             display: flex;
-//             flex-flow: row nowrap;
-//             align-items: center;
-//             gap: .7rem;
-//         }
-//     }
-// }
+
 .homePage {
     padding-top: 1rem;
     .hero {
@@ -127,15 +90,17 @@
 }
 @media (min-width: $media-large) {
     .homePage{   
-        max-width: 1100px;  margin: 0 auto;
         .hero{ 
             align-self: center;  
             &__imageContainer {
                height: 22rem;
-               width: 60%;
+               width: 70%;
+               margin: 0 $padding-medium;
+               
             }
             &__messageContainer{
-                width: 40%;
+                width: 30%;
+                margin: 0 $padding-medium;
             }
             &__title{
                 font-size: 1.5rem;
@@ -145,7 +110,14 @@
             }
         }
         .teams{
+            margin-bottom: $padding-medium;
+            &__title{
+                margin: 0 $padding-medium;
+                padding: $padding-small 0;
+                font-size: 1.5rem;
+            }
             .inner-carousel{
+                margin: 0 $padding-medium;
                 gap: 3rem;
             }
         }

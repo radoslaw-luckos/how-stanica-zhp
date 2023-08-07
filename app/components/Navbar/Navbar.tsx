@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 import { MuseoSans } from '@/app/utils/Fonts';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { useState } from 'react';
-import { motion as m } from 'framer-motion';
 
 const Navbar = () => {
 	const activePath: string = usePathname();
