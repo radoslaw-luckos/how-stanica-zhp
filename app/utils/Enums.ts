@@ -3,3 +3,9 @@ export enum SocialColor {
     Youtube = 'red',
     Instagram = 'white'
 }
+
+export enum SexTeamType {
+    male = 'męska',
+    female = 'żeńska',
+    coed = 'koedukacyjna'
+}

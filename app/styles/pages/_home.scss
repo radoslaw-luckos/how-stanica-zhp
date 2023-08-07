@@ -47,6 +47,10 @@
             background: #D9D9D9;
             border-radius: 18.75rem 18.75rem 18.75rem 6.25rem;
             overflow: hidden;
+            img{
+                object-fit:contain;
+                object-position: left;
+            }
         }
         &__messageContainer{
             margin: $padding-small;
@@ -71,6 +75,20 @@
             flex-flow: row nowrap;
             align-items: center;
             gap: .7rem;
+        }
+    }
+    .teams{
+        &__title{
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-left: $padding-small;
+        }
+        &__carousel{
+            cursor: grab;
+            overflow: hidden;
+            .inner-carousel{
+                display: flex;              
+            }
         }
     }
 }
