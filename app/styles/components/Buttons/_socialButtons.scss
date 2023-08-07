@@ -16,6 +16,9 @@
     }
     &--blue{
         background-color: $color-fb;
+        p {
+            display: none;
+        }
     }
     &--white{
         background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
