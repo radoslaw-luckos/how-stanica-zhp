@@ -26,36 +26,59 @@ const Navbar = () => {
 				>
 					<RxHamburgerMenu />
 				</button>
-				<ul className={`menu${isMenuOpened ? ' menu--active' : ''}`}>
+				<ul className={`mobile-menu${isMenuOpened ? ' mobile-menu--active' : ''}`}>
 					<li
-						className={activePath == '/' ? 'menu__link menu__link--active' : 'menu__link'}
+						className={activePath == '/' ? 'mobile-menu__link mobile-menu__link--active' : 'mobile-menu__link'}
 						onClick={() => setMenuOpened(!isMenuOpened)}
 					>
 						<Link href='/'>Główna</Link>
 					</li>
 					<li
-						className={activePath == '/o-nas' ? 'menu__link menu__link--active' : 'menu__link'}
+						className={activePath == '/o-nas' ? 'mobile-menu__link mobile-menu__link--active' : 'mobile-menu__link'}
 						onClick={() => setMenuOpened(!isMenuOpened)}
 					>
 						<Link href='/o-nas'>O nas</Link>
 					</li>
 					<li
-						className={activePath == '/oferta' ? 'menu__link menu__link--active' : 'menu__link'}
+						className={activePath == '/oferta' ? 'mobile-menu__link mobile-menu__link--active' : 'mobile-menu__link'}
 						onClick={() => setMenuOpened(!isMenuOpened)}
 					>
 						<Link href='/oferta'>Oferta</Link>
 					</li>
 					<li
-						className={activePath == '/kontakt' ? 'menu__link menu__link--active' : 'menu__link'}
+						className={activePath == '/kontakt' ? 'mobile-menu__link mobile-menu__link--active' : 'mobile-menu__link'}
 						onClick={() => setMenuOpened(!isMenuOpened)}
 					>
 						<Link href='/kontakt'>Kontakt</Link>
 					</li>
-					<div className='menu__mobile-socials'>
+					<div className='mobile-menu__mobile-socials'>
 						<Link href={''}><FaFacebook/></Link>
 						<Link href={''}><FaInstagram/></Link>
 						<Link href={''}><FaYoutube/></Link>
 					</div>
+				</ul>
+				
+				<ul className={'menu'}>
+					<li
+						className={activePath == '/' ? 'menu__link menu__link--active' : 'menu__link'}
+					>
+						<Link href='/'>Główna</Link>
+					</li>
+					<li
+						className={activePath == '/o-nas' ? 'menu__link menu__link--active' : 'menu__link'}
+					>
+						<Link href='/o-nas'>O nas</Link>
+					</li>
+					<li
+						className={activePath == '/oferta' ? 'menu__link menu__link--active' : 'menu__link'}
+					>
+						<Link href='/oferta'>Oferta</Link>
+					</li>
+					<li
+						className={activePath == '/kontakt' ? 'menu__link menu__link--active' : 'menu__link'}
+					>
+						<Link href='/kontakt'>Kontakt</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>
