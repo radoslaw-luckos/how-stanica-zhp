@@ -71,19 +71,26 @@
             top: 100%;
             left: 0;
             width: 100%;
-            min-height: calc(100vh - 7rem);
             background-color: $dark-bg;
             z-index: 100;
             display: flex;
             flex-flow: column nowrap;
-            align-items: center;
-            justify-content: space-around;
-            padding: $padding-big 0;
-            
+            align-items:flex-start;
+            justify-content: flex-start;
+            padding: $padding-small 0;
+            border-top: 1px solid $light-bg;            
+        }
+        &__mobile-socials{
+            padding: 1rem;
+            font-size: 1.25rem;
+            svg{
+                color: $light-text;
+                margin-right: 1rem;
+            }
         }
         &__link {
             height: 100%;
-            padding-inline: 1rem;
+            padding: 1rem;
             a{
                 text-decoration: none;
                 color: $light-text;

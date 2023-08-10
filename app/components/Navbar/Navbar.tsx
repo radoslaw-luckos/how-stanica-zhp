@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MuseoSans } from '@/app/utils/Fonts';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -50,6 +51,11 @@ const Navbar = () => {
 					>
 						<Link href='/kontakt'>Kontakt</Link>
 					</li>
+					<div className='menu__mobile-socials'>
+						<Link href={''}><FaFacebook/></Link>
+						<Link href={''}><FaInstagram/></Link>
+						<Link href={''}><FaYoutube/></Link>
+					</div>
 				</ul>
 			</nav>
 		</header>
