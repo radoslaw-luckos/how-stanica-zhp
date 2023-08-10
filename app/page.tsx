@@ -11,7 +11,10 @@ import TeamCard from './components/Cards/TeamCard';
 
 export default function Home() {
 	const [carouselWidth, setCarouselWidth] = useState(0);
-	const carousel: RefObject<any> = useRef();
+	const carousel: RefObject<any> = useRef(); 
+	/** 
+	* TODO: try to find right type for useRef
+	*/ 
 
 	useEffect(() => {
 		if (carousel){
