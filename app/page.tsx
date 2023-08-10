@@ -6,15 +6,17 @@ import { teams } from './utils/Mocks';
 import Image from 'next/image';
 import { MuseoSans } from './utils/Fonts';
 import { motion as m } from 'framer-motion';
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, RefObject } from 'react';
 import TeamCard from './components/Cards/TeamCard';
 
 export default function Home() {
 	const [carouselWidth, setCarouselWidth] = useState(0);
-	const carousel = useRef();
+	const carousel: RefObject<any> = useRef();
 
 	useEffect(() => {
-		setCarouselWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+		if (carousel){
+			setCarouselWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+		}
 	}, []);
 
 	return (
