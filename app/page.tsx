@@ -1,7 +1,6 @@
 import SocialButton from './components/UI/Buttons/SocialButton';
 import { FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
 import { SocialColor } from './utils/Enums';
-import { teams } from './utils/Mocks';
 import Image from 'next/image';
 import { MuseoSans } from './utils/Fonts';
 import TeamsCarousel from './components/UI/TeamsCarousel';

@@ -1,10 +1,13 @@
+// import utilities
+
+@import './utils/variables';
+
+
 // import base settings
 
 @import './base/reset';
 
-// import utilities
 
-@import './utils/variables';
 
 // import components styles
 
@@ -16,3 +19,4 @@
 // import pages styles
 
 @import './pages/home';
+@import './pages/team';

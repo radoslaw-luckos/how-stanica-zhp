@@ -1,3 +1,10 @@
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+$font-primary: 'Inter', sans-serif;
+
+
 //colors
 $primary-text: #000;
 $light-text: #F4F4F4;
@@ -7,12 +14,14 @@ $color-fb:#194093;
 $color-yb: #FF0000;
 $color-ig:#F4F4F4;
 
-
+//paddings
 $padding-xs: .5rem;
 $padding-small: 1.5rem;
 $padding-medium: 4rem;
 $padding-big: 10rem;
 
+
+//media
 $media-small: 481px;
 $media-medium: 769px; 
 $media-large: 1025px; 

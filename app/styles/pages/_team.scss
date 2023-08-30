@@ -1,0 +1,47 @@
+.teamPage {
+    padding-top: 1rem;
+    .hero {
+        padding-top: $padding-small;
+        display: flex;
+        flex-flow: column nowrap;
+        &-imageContainer {
+            height: 11rem;
+            margin: 0 $padding-small;
+            background: #D9D9D9;
+            border-radius: 18.75rem 18.75rem 18.75rem 6.25rem;
+            overflow: hidden;
+            position: relative;
+        }
+        &-details{
+            margin: $padding-small;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            &__title{
+                font-size: 1.3rem;
+                font-style: italic;
+                padding-bottom: 1rem;
+            }
+            &__info{
+                list-style: none;
+                text-decoration: none;
+                li {
+                    font-size: 1rem;
+                    padding-bottom: $padding-xs;
+                }
+            }
+        }
+    }
+    .desc{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: justify;
+        margin: 0 $padding-small;
+        margin-top: $padding-small;
+        line-height: 1.1rem;
+        gap: 1rem;
+    }
+}
