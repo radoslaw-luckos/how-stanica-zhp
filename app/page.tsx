@@ -1,26 +1,13 @@
-'use client';
-import SocialButton from './components/Buttons/SocialButton';
+import SocialButton from './components/UI/Buttons/SocialButton';
 import { FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
 import { SocialColor } from './utils/Enums';
 import { teams } from './utils/Mocks';
 import Image from 'next/image';
 import { MuseoSans } from './utils/Fonts';
-import { motion as m } from 'framer-motion';
-import { useRef, useEffect, useState, RefObject } from 'react';
-import TeamCard from './components/Cards/TeamCard';
+import TeamsCarousel from './components/UI/TeamsCarousel';
 
 export default function Home() {
-	const [carouselWidth, setCarouselWidth] = useState(0);
-	const carousel: RefObject<any> = useRef(); 
-	/** 
-	* TODO: try to find right type for useRef
-	*/ 
-
-	useEffect(() => {
-		if (carousel){
-			setCarouselWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-		}
-	}, []);
+	
 
 	return (
 		<main className='homePage'>
@@ -61,27 +48,7 @@ export default function Home() {
 			</section>
 			<section className='teams'>
 				<h1 className={`${MuseoSans.className} teams__title`}>Drużyny na Stanicy</h1>
-				<m.div
-					ref={carousel}
-					whileTap={{ cursor: 'grabbing' }}
-					className='teams__carousel'
-				>
-					<m.div
-						drag='x'
-						dragConstraints={{ right: 0, left: -carouselWidth }}
-						className='inner-carousel'
-					>
-						{teams.map((team) => (
-							<TeamCard
-								key={team.teamName}
-								teamName={team.teamName}
-								teamType={team.teamType}
-								age={team.age}
-								imageUrl={team.imageUrl}
-							/>
-						))}
-					</m.div>
-				</m.div>
+				<TeamsCarousel/>
 			</section>
 		</main>
 	);

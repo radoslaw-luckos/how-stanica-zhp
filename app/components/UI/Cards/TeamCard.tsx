@@ -1,17 +1,19 @@
 import { SexTeamType } from '@/app/utils/Enums';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export type TeamCardProps = {
 	imageUrl: string;
 	teamName: string;
+	teamSlug: string;
 	teamType: SexTeamType;
 	age: string;
 };
 
-const TeamCard = ({ imageUrl, teamName, teamType, age }: TeamCardProps) => {
+const TeamCard = ({ imageUrl, teamName,teamSlug, teamType, age }: TeamCardProps) => {
 	return (
-		<div className='teamCard'>
+		<Link href={`/o-nas/druzyny/${teamSlug}`} className='teamCard'>
 			<div className='teamCard__imageContainer'>
 				<Image
 					src={`${imageUrl}`}
@@ -24,7 +26,7 @@ const TeamCard = ({ imageUrl, teamName, teamType, age }: TeamCardProps) => {
 			<p className='teamCard__info'>
 				{teamType}, {age}
 			</p>
-		</div>
+		</Link>
 	);
 };
 
