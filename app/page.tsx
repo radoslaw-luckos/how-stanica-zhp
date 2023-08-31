@@ -21,7 +21,7 @@ export default function Home() {
 					<div className='hero__socials'>
 						<SocialButton color={SocialColor.Facebook}>
 							<FaFacebook />
-							<p className={MuseoSans.className}>Aktualności na Facebook'u</p>
+							<p className={MuseoSans.className}>Aktualności</p>
 						</SocialButton>
 						<SocialButton color={SocialColor.Youtube}>
 							<FaYoutube />
