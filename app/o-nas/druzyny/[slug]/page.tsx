@@ -22,7 +22,7 @@ export default function Team({params} : { params: { slug: string } }) {
 						}}
                         />
                 </figure>
-                <p className="hero-details">
+                <div className="hero-details">
                     <h1 className={`${MuseoSans.className} hero-details__title`}>[Nazwa Drużyny]</h1>
                     <ul className="hero-details__info">
                         <li><p>Rodzaj: [koedukacyjna/męska/żeńska]</p></li>
@@ -35,7 +35,7 @@ export default function Team({params} : { params: { slug: string } }) {
                         <FaFacebook />
 						<p className={MuseoSans.className}>Profil na Facebook'u</p>
                     </SocialButton>
-                </p>
+                </div>
             </section>
             <section className="desc">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet natus, sequi quam quae vel provident porro explicabo culpa illo eum incidunt nesciunt suscipit, nihil, cupiditate consequuntur voluptatem neque necessitatibus earum!
