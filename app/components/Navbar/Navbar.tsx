@@ -13,12 +13,12 @@ const Navbar = () => {
 	const [isMenuOpened, setMenuOpened] = useState<boolean>(false);
 	return (
 		<header className={`${MuseoSans.className} navbar`}>
-			<div className='logo'>
+			<Link className='logo' href={'/'}>
 				<Image
 					alt='HOW Stanica logo'
 					src={stanicaLogo}
 				/>
-			</div>
+			</Link>
 			<nav>
 				<button
 					className='hamburgerBtn'
@@ -34,7 +34,7 @@ const Navbar = () => {
 						<Link href='/'>Główna</Link>
 					</li>
 					<li
-						className={activePath == '/o-nas' ? 'mobile-menu__link mobile-menu__link--active' : 'mobile-menu__link'}
+						className={activePath.includes('/o-nas') ? 'mobile-menu__link mobile-menu__link--active' : 'mobile-menu__link'}
 						onClick={() => setMenuOpened(!isMenuOpened)}
 					>
 						<Link href='/o-nas'>O nas</Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
 						<Link href='/'>Główna</Link>
 					</li>
 					<li
-						className={activePath == '/o-nas' ? 'menu__link menu__link--active' : 'menu__link'}
+						className={activePath.includes('/o-nas') ? 'menu__link menu__link--active' : 'menu__link'}
 					>
 						<Link href='/o-nas'>O nas</Link>
 					</li>
