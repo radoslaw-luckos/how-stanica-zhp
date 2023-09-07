@@ -10,6 +10,12 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
+                hostname: 'images.ctfassets.net',
+                port: '',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
                 hostname: 'scontent-waw1-1.xx.fbcdn.net',
                 port: '',
                 pathname: '/**',

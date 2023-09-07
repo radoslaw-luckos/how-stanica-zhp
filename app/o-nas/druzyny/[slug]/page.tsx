@@ -1,6 +1,6 @@
 
 import SocialButton from '@/app/components/UI/Buttons/SocialButton';
-import { SocialColor } from '@/app/utils/Enums';
+import { SocialColorEnum } from '@/app/utils/Enums';
 import { MuseoSans } from '@/app/utils/Fonts';
 import Image from 'next/image';
 import { FaFacebook } from 'react-icons/fa';
@@ -31,7 +31,7 @@ export default function Team({params} : { params: { slug: string } }) {
                         <li><p>Drużynowy: [imię i nazwisko]</p></li>
                         <li><p>Kontakt: [mail i telefon]</p></li>
                     </ul>
-                    <SocialButton color={SocialColor.Facebook}>
+                    <SocialButton color={SocialColorEnum.Facebook}>
                         <FaFacebook />
 						<p className={MuseoSans.className}>Profil na Facebook'u</p>
                     </SocialButton>

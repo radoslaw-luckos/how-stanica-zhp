@@ -1,8 +1,8 @@
-import { SocialColor } from '@/app/utils/Enums';
+import { SocialColorEnum } from '@/app/utils/Enums';
 import React, { ReactNode } from 'react';
 
 type Props = {
-	color: SocialColor;
+	color: SocialColorEnum;
 	children: ReactNode;
 };
 

@@ -1,11 +1,14 @@
 import SocialButton from './components/UI/Buttons/SocialButton';
 import { FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
-import { SocialColor } from './utils/Enums';
+import { SocialColorEnum } from './utils/Enums';
 import Image from 'next/image';
 import { MuseoSans } from './utils/Fonts';
 import TeamsCarousel from './components/UI/TeamsCarousel';
+import { useTeams } from './hooks/useTeamsHook';
 
 export default function Home() {
+	
+
 	
 
 	return (
@@ -19,14 +22,14 @@ export default function Home() {
 						żeglarską pasję. Sprawdź, co możemy zrobić dla Ciebie!
 					</p>
 					<div className='hero__socials'>
-						<SocialButton color={SocialColor.Facebook}>
+						<SocialButton color={SocialColorEnum.Facebook}>
 							<FaFacebook />
 							<p className={MuseoSans.className}>Aktualności</p>
 						</SocialButton>
-						<SocialButton color={SocialColor.Youtube}>
+						<SocialButton color={SocialColorEnum.Youtube}>
 							<FaYoutube />
 						</SocialButton>
-						<SocialButton color={SocialColor.Instagram}>
+						<SocialButton color={SocialColorEnum.Instagram}>
 							<FaInstagram />
 						</SocialButton>
 					</div>

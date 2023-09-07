@@ -1,4 +1,4 @@
-import { SexTeamType } from '@/app/utils/Enums';
+import { TeamSexEnum } from '@/app/utils/Enums';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -7,7 +7,7 @@ export type TeamCardProps = {
 	imageUrl: string;
 	teamName: string;
 	teamSlug: string;
-	teamType: SexTeamType;
+	teamType: TeamSexEnum;
 	age: string;
 };
 

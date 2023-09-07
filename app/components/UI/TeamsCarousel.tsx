@@ -2,10 +2,11 @@
 import { useRef, useEffect, useState, RefObject } from 'react';
 import { motion as m } from 'framer-motion';
 import TeamCard from '../../components/UI/Cards/TeamCard';
-import { teams } from '@/app/utils/Mocks';
+import { useTeams } from '@/app/hooks/useTeamsHook';
 
 
 const TeamsCarousel = () => {
+	const {teams} = useTeams();	
     const [carouselWidth, setCarouselWidth] = useState(0);
 	const carousel: RefObject<any> = useRef(); 
 	/** 
@@ -16,7 +17,7 @@ const TeamsCarousel = () => {
 			setCarouselWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
 		}
 	}, []);
-  return (
+  	if (teams) return (
     <>
     <m.div
 					ref={carousel}
@@ -28,20 +29,22 @@ const TeamsCarousel = () => {
 						dragConstraints={{ right: 0, left: -carouselWidth }}
 						className='inner-carousel'
 					>
-						{teams.map((team) => (
+						{teams && teams.map((team) => (
 							<TeamCard
-								key={team.teamName}
-								teamName={team.teamName}
-								teamSlug={team.teamSlug}
-								teamType={team.teamType}
+								key={team.name}
+								teamName={team.name}
+								teamSlug={team.slug}
+								teamType={team.type}
 								age={team.age}
-								imageUrl={team.imageUrl}
+								imageUrl={team.logoURL}
 							/>
 						))}
 					</m.div>
 				</m.div>
     </>
-    
-  )
+    )
+	else return (
+		<p>Trwa ładowanie drużyn</p>
+	)
 }
 export default TeamsCarousel
