@@ -1,7 +1,6 @@
  import {useEffect, useState} from 'react'
 import { client } from '../api/client'
 import { TeamBriefType } from '../utils/Types';
-import { log } from 'console';
  
  export const useTeams = () => {
     const [teams, setTeams] = useState<TeamBriefType[]>([])
