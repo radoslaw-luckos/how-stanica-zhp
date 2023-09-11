@@ -14,15 +14,18 @@ export type TeamCardProps = {
 const TeamCard = ({ imageUrl, teamName,teamSlug, teamType, age }: TeamCardProps) => {
 	return (
 		<Link href={`/o-nas/druzyny/${teamSlug}`} className='teamCard'>
-			<div className='teamCard__imageContainer'>
-				<Image
-					src={`${imageUrl}`}
-					alt={`${teamName} - logo`}
-					width={100}
-					height={100}
-				/>
+			<div className='teamCard__hero'>
+				<div className='teamCard__imageContainer'>
+					<Image
+						src={`${imageUrl}`}
+						alt={`${teamName} - logo`}
+						width={100}
+						height={100}
+					/>
+				</div>
+				<h2 className='teamCard__name'>{teamName}</h2>
 			</div>
-			<h2 className='teamCard__name'>{teamName}</h2>
+			
 			<p className='teamCard__info'>
 				{teamType}, {age}
 			</p>
