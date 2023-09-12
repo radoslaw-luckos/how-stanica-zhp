@@ -14,9 +14,11 @@
 @import './components/navbar';
 @import './components/footer';
 @import './components/Buttons/socialButtons';
+@import './components/Buttons/actionButton';
 @import './components/Cards/teamCard';
 
 // import pages styles
 
 @import './pages/home';
 @import './pages/team';
+@import './pages/about';

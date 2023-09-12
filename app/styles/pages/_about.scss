@@ -1,0 +1,99 @@
+.aboutPage{
+    padding: $padding-small 0;
+    .hero,.yesterday,.today {
+        margin: $padding-small;
+        display: flex;
+        flex-flow: column nowrap;
+        &__title{
+            font-style: italic;
+            padding-bottom: 1rem;
+        }
+        &__imageContainer {
+            height: 11rem;
+            margin: $padding-small;
+            background: #D9D9D9;
+            overflow: hidden;
+            position: relative;
+            &--left {
+                border-radius: 18.75rem 18.75rem 18.75rem 6.25rem;
+            }
+            &--right {
+                border-radius: 18.75rem 18.75rem  6.25rem 18.75rem;
+            }
+        }
+        &__textContainer{
+            text-align: justify;
+        }
+    }
+    .hero {
+        &__title{            
+            font-size: 1.3rem;
+        }
+    }
+    .today {
+        &__textContainer{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: left;  
+            button{
+                align-self: center;
+            }
+        }
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: $media-small) {
+    .aboutPage{
+        .hero,.yesterday,.today {            
+            &__imageContainer {
+                height: 17rem;
+            }
+        }
+    }
+}
+@media (min-width: $media-medium) {
+    .aboutPage{
+        .yesterday,.today {            
+            flex-flow: row nowrap;
+            &__imageContainer{
+                width: 60%;
+            }
+            &__textContainer{
+                width: 40%;
+            }
+        }
+        .today {
+            flex-direction: row-reverse;
+        }
+    }
+}
+@media (min-width: $media-large) {
+    .aboutPage{
+        .hero,.yesterday,.today {
+            margin: $padding-medium;
+        }
+        .yesterday,.today {            
+            align-items: center;
+            gap: 1rem;
+            &__imageContainer{
+                height: 22rem;
+            }
+            &__textContainer{
+                width: 40%;
+            }
+        }
+        .today {
+            flex-direction: row-reverse;
+        }
+    }
+}
+@media (min-width: $media-xlarge) {
+    .aboutPage{
+        margin: $padding-medium 0;
+        .hero,.yesterday,.today {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+    }
+}

@@ -4,7 +4,6 @@ import { SocialColorEnum } from './utils/Enums';
 import Image from 'next/image';
 import { MuseoSans } from './utils/Fonts';
 import TeamsCarousel from './components/UI/TeamsCarousel';
-import { useTeams } from './hooks/useTeamsHook';
 
 export default function Home() {
 	

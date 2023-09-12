@@ -1,0 +1,31 @@
+.actionBtn {
+    background: $dark-bg;
+    color: $light-text;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    padding: .75rem 1.5rem;
+    margin: $padding-small 0;
+    transition: all .6s ease-in;
+    a{
+        font-weight: 500;
+        font-family: 'Inter';
+        text-decoration: none;
+        color: $light-text
+    }
+    &:hover{
+        background: linear-gradient(274deg, #232740 0.07%, #194093 100%);
+    }
+}
+
+@media (min-width: $media-large) {
+    .actionBtn {
+        padding: 1rem 2rem;
+    }
+}
+@media (min-width: $media-xlarge) {
+    .actionBtn {
+        padding: 1rem 2rem;
+        margin-top: $padding-medium;
+    }
+}
