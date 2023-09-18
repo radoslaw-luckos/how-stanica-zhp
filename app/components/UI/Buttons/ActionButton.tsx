@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
 
 type BtnPropsType = {
-	children: ReactNode;
+	children?: ReactNode;
+	actionHandler?: any;
 };
 
 const ActionButton = ({ children }: BtnPropsType) => {

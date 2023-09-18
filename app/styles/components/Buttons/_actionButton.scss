@@ -7,9 +7,9 @@
     padding: .75rem 1.5rem;
     margin: $padding-small 0;
     transition: all .6s ease-in;
-    a{
+    a, p{
         font-weight: 500;
-        font-family: 'Inter';
+        font-family: $font-primary;
         text-decoration: none;
         color: $light-text
     }
