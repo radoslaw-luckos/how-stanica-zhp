@@ -1,8 +1,8 @@
-// import dynamic from 'next/dynamic';
-// import DynamicMap = dynamic(() => import("../components/UI/Map/Map"), {
-//     loading: () => <p>loading...</p>,
-//     ssr: false
-// })
+'use client';
+import dynamic from 'next/dynamic';
+const Map = dynamic(() => import('../components/UI/Map/Map'), {
+	ssr: false,
+});
 import Image from 'next/image';
 import ActionButton from '../components/UI/Buttons/ActionButton';
 
@@ -10,7 +10,7 @@ export default function Contact() {
 	return (
 		<main className='contactPage'>
 			<header className='hero'>
-				<h1 className='hero__title'>Kontakt</h1>
+				<h1 className='hero__title'>Napisz do nas!</h1>
 				<p className='hero__text'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu purus facilisis,
 					imperdiet lorem sed, sodales dolor. Sed sagittis lectus ex, sit amet cursus turpis
@@ -50,7 +50,7 @@ export default function Contact() {
 						<textarea
 							id='message'
 							rows={5}
-							// cols={50}
+							placeholder='Tu wpisz wiadomość do nas!'
 						/>
 					</div>
 					<ActionButton>
@@ -71,22 +71,29 @@ export default function Contact() {
 					/>
 				</div>
 			</section>
-			{/* <section className='map'>
-				<DynamicMap />
-				<div className='map__details'>
-					<p className='map__contactInfo'>
-						Adres: <br />
-						ul. Kożuchowska 13, 51-013 Wroclaw
-					</p>
-					<p className='map__contactI'>
-						Kontakt do Komendanta Ośrodka <br />
-						fsafds@dsdfsdf.pl +48 111 222 333
-					</p>
-					<p className='map__contactI'>
-						Kontakt do Bosmana Ośrodka <br /> fsafds@dsdfsdf.pl +48 111 222 333
-					</p>
+			<section className='map'>
+				<h2 className='map__title'>Lub skontaktuj się z nami inaczej!</h2>
+				<div className='map__content'>
+					<Map />
+					<div className='map__details'>
+						<p className='map__contactInfo'>
+							<span className='map__contactInfo--strong'>Adres:</span> <br />
+							ul. Kożuchowska 13, 51-013 Wrocław
+						</p>
+						<p className='map__contactInfo'>
+							<span className='map__contactInfo--strong'>Kontakt do Komendanta Ośrodka</span> <br />
+							fsafds@dsdfsdf.pl <br />
+							+48 111 222 333
+						</p>
+						<p className='map__contactInfo'>
+							<span className='map__contactInfo--strong'>Kontakt do Bosmana Ośrodka</span>
+							<br />
+							fsafds@dsdfsdf.pl <br />
+							+48 111 222 333
+						</p>
+					</div>
 				</div>
-			</section> */}
+			</section>
 		</main>
 	);
 }
