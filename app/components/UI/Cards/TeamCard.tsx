@@ -27,7 +27,7 @@ const TeamCard = ({ imageUrl, teamName,teamSlug, teamType, age }: TeamCardProps)
 			</div>
 			
 			<p className='teamCard__info'>
-				{teamType}, {age}
+				{teamType}, <br></br>{age}
 			</p>
 		</Link>
 	);

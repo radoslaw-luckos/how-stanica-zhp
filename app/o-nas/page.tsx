@@ -6,7 +6,7 @@ export default function About() {
 	return (
 		<main className='aboutPage'>
 			<header className='hero'>
-				<h1 className='hero__title'>O nas</h1>
+				<h1 className='hero__title heading'>O nas</h1>
 				<p className='hero__text'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu purus facilisis,
 					imperdiet lorem sed, sodales dolor. Sed sagittis lectus ex, sit amet cursus turpis
@@ -29,7 +29,7 @@ export default function About() {
 					/>
 				</div>
 				<div className='yesterday__textContainer'>
-					<h2 className='yesterday__title'>Wczoraj...</h2>
+					<h2 className='yesterday__title heading'>Wczoraj...</h2>
 					<p className='yesterday__text'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu purus facilisis,
 						imperdiet lorem sed, sodales dolor. Sed sagittis lectus ex, sit amet cursus turpis
@@ -56,7 +56,7 @@ export default function About() {
 					/>
 				</div>
 				<div className='today__textContainer'>
-					<h2 className='today__title'>a dziś...</h2>
+					<h2 className='today__title heading'>a dziś...</h2>
 					<p className='today__text'>
 						Nunc eu purus facilisis, imperdiet lorem sed, sodales dolor. Sed sagittis lectus ex, sit
 						amet cursus turpis consequat quis. Praesent ligula lectus, lacinia hendrerit consectetur

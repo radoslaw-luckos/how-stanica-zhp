@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import stanicaLogo from '../../assets/icons/stanica-white.svg';
+import stanicaLogo from '../../assets/icons/logo.svg';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MuseoSans } from '@/app/utils/Fonts';
@@ -15,9 +15,10 @@ const Navbar = () => {
 		<header className={`${MuseoSans.className} navbar`}>
 			<Link className='logo' href={'/'}>
 				<Image
-					alt='HOW Stanica logo'
+					alt='WZD Stanica logo'
 					src={stanicaLogo}
 				/>
+				<h1>Wrocławski Związek Drużyn "Stanica"</h1>
 			</Link>
 			<nav>
 				<button

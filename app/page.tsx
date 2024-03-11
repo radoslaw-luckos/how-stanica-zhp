@@ -14,7 +14,7 @@ export default function Home() {
 		<main className='homePage'>
 			<section className='hero'>
 				<div className='hero__messageContainer'>
-					<h1 className={`${MuseoSans.className} hero__title`}>Czuwaj! Ahoj!</h1>
+					<h1 className={`${MuseoSans.className} hero__title heading`}>Czuwaj! Ahoj!</h1>
 					<p className='hero__msg'>
 						Witamy na stronie HOW Stanica! <br />
 						Nasz ośrodek od 50 lat zrzesza harcerskich wodniaków i pozwala im rozwijać swoją
@@ -48,7 +48,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className='teams'>
-				<h1 className={`${MuseoSans.className} teams__title`}>Drużyny na Stanicy</h1>
+				<h1 className={`${MuseoSans.className} teams__title heading`}>Drużyny na Stanicy</h1>
 				<TeamsCarousel/>
 			</section>
 		</main>

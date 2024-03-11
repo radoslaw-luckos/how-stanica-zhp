@@ -18,7 +18,7 @@
         &__imageContainer {
             height: 15rem;
             margin-top: $padding-small;
-            background: #D9D9D9;
+            background: $detail-bg;
             overflow: hidden;
             position: relative;
             border-radius: 18.75rem 18.75rem  6.25rem 18.75rem;
@@ -54,7 +54,7 @@
             }
             input, select{
                 border: none;
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid $dark-bg;
                 width: 100%;
                 outline: none;
                 line-height: 1.5rem;
@@ -66,11 +66,11 @@
                 background: none;
                 border: none;
                 outline: none;
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid $dark-bg;
                 font-family: $font-primary;
             }
             textarea {
-                border: 1px solid black;                
+                border: 1px solid $dark-bg;                
                 outline: none;
                 font-family: $font-primary;
                 font-size: .9rem;
@@ -94,7 +94,7 @@
     
     &__contactInfo {
         box-shadow: 0px 0px 20px rgba(35, 39, 64, 0.15);
-        margin: $padding-small 0;
+        margin: $padding-xs 0;
         display: grid;
         align-content: center;
         justify-items: center;
@@ -190,12 +190,12 @@
             .leaflet-container {
                 height: 25rem;
                 width: 65%;
-                border-radius: 18.75rem 18.75rem  18.75rem 6.25rem ;
+                border-radius: 6.25rem 18.75rem 18.75rem  18.75rem;
             }
             &__details{
                 display: flex;
                 flex-flow: column;
-                gap: 1rem;
+                gap: .1rem;
             }
         } 
     }

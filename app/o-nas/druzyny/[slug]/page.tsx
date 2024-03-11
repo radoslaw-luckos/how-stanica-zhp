@@ -23,7 +23,7 @@ export default function Team({params} : { params: { slug: string } }) {
                         />
                 </figure>
                 <div className="hero-details">
-                    <h1 className={`${MuseoSans.className} hero-details__title`}>[Nazwa Drużyny]</h1>
+                    <h1 className={`${MuseoSans.className} hero-details__title heading`}>[Nazwa Drużyny]</h1>
                     <ul className="hero-details__info">
                         <li><p>Rodzaj: [koedukacyjna/męska/żeńska]</p></li>
                         <li><p>Wiek: [grupa metodyczna]</p></li>

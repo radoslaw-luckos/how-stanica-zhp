@@ -8,6 +8,24 @@
     width: 100%;
     padding: 0 $padding-small;
     position: relative;
+    .logo{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        h1{
+            font-family: $font-primary;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: $light-text;
+            text-decoration: none;
+        }
+        img{
+            height: 7rem;
+            width: fit-content;
+        }
+    }
+     
     .hamburgerBtn{
         border: none;
         background: transparent;
@@ -122,4 +140,7 @@
     
 }
 @media (min-width: $media-xlarge) {
+    .navbar{
+        padding-inline: $padding-medium;   
+    }
 }

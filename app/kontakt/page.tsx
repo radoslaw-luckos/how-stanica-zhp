@@ -10,7 +10,7 @@ export default function Contact() {
 	return (
 		<main className='contactPage'>
 			<header className='hero'>
-				<h1 className='hero__title'>Napisz do nas!</h1>
+				<h1 className='hero__title heading'>Napisz do nas!</h1>
 				<p className='hero__text'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu purus facilisis,
 					imperdiet lorem sed, sodales dolor. Sed sagittis lectus ex, sit amet cursus turpis
@@ -72,7 +72,7 @@ export default function Contact() {
 				</div>
 			</section>
 			<section className='map'>
-				<h2 className='map__title'>Lub skontaktuj się z nami inaczej!</h2>
+				<h2 className='map__title heading'>Lub skontaktuj się z nami inaczej!</h2>
 				<div className='map__content'>
 					<Map />
 					<div className='map__details'>
